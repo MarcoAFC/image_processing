@@ -7,11 +7,6 @@
 
 - Esse projeto tem como objetivo a manipulação de imagens do tipo ppm, as quais são do tipo "P3". Com a finalidade de implementar filtros nas imagens fornecidas pelo usuario do programa. Este programa foi criado utilizando algumas bibliotecas padrões de C, para criar uma biblioteca cujas funções manipulam imagens. Foi criado um makefile para facilitar a compilação e execução do programa pelo usuário.
 
-## O que fariamos diferente hoje
-
-Modularizariamos melhor, separando os filtros em diferentes arquivos, funcionalidades e utilidades. Para que dessa forma o programa funcionasse para qualquer arquivo, não só arquivos do ambito `ppm` como também para arquivos de texto e outros tipos de arquivos do tipo imagem como `jpg`, `png`, `bmp`. Utilizariamos melhor os structs, fazendo um struct que recebesse a imagem as características da imagem,  além dos pixels em RGB, foi algo que tentamos implementar porem não conseguimos levar em frente no projeto, devido à maior complexidade em trabalhar com esses valores, que levou a diversos erros que não conseguimos contornar, sendo algo que deixamos desejar e que desejariamos ter implementado.
-
-Além disso, não conseguimos implementar alguns filtros com bases mais complexas como os filtros baseados na transformada de Fourier e nas curvas de Bezier, que possibilitariam gerar uma nova gama de possibilidades no programa, mas devido às dificuldades na aplicação do procedimento, não conseguimos implementar.
 
 # Como compilar e executar
 
@@ -191,6 +186,3 @@ A função de escolher outra imagem para aplicação de filtros funciona até tr
 
 Para usar o `make gdb` é necessario ter o *`gdb`* instalado.
 
-## Não foi implementado
-
-Tentamos montar funções recursivamente, porem foi apontada falha de segmentação, sendo assim, decidimos deixar as funções funcionando interativamente, para garantir a utilização do filtro pelo usuário. Alguns dos extras possíveis não foram aplicados, devido à maior complexidade dos mesmos.
